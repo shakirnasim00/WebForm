@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: fit-content;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#contact-nav{
+    color: gray;
+    text-decoration-color: rgb(181,181,181);
+}
+
+#form-heading h1 {
+    text-align: center;
+    justify-self: center;
+}
+
+hr {
+    width: 33%;
+    margin: 20px auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.contact-input {
+    padding: 12px 20px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#inquiry-type {
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.form-checkbox {
+        display: flex;
+        align-items: center; 
+        margin-top: 8px;
+}
+
+.form-checkbox label {
+   margin-right: 20px;
+}
+
+.form-checkbox input {
+    height: 20px;
+
+}
+
+input:valid {background-color: rgb(220, 255, 220);
+}
+
+input:invalid {background-color: rgb(255, 232, 233)
+};
+
+.form-buttons {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+
+.form-buttons button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    margin: 20px 10px; 
+    background-color: #469d49; 
+    color: white; 
+    border: none;
+    cursor: pointer; 
+    border-radius: 20px;
+}
+
+#submit {
+    background-color: #469d49;
+    color: white;
+}
+
+#submit:hover {
+    background-color: darkgreen;
+}
+
+#reset {
+    background-color: darkgrey;
+    color: white;
+}
+
+#reset:hover {
+    background-color: grey;
+}
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="desktop-nav">
+        
+        <div class="logo"><a href="index.html"><img src="./images/Shakir-logo.png" height="125px" width="auto"></a></div>
+
+        <div>
+            <ul class="nav-links">
+                <li> <a href="index.html#about">About</a> </li>
+                <li> <a href="index.html#experience">Experience</a> </li>
+                <li> <a href="index.html#projects">Projects</a> </li>
+                <li> <a href="./form.html" id="contact-nav">Contact</a> </li>
+               
+            </ul>
+        </div>
+    </nav>
+    <div id="form-heading">
+        <h1>Contact Form</h1>
+        <hr>
+    </div>
+
+    <div class="contact-container">
+
+        <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
+
+            <!-- Access Key to send information inputted to my E-mail via Web3Form API -->
+            <input type="hidden" name="access_key" value="3169ae38-5e70-4618-bb19-ce6ab9bf7033"> 
+
+            <input type="text" name="fName" placeholder="First Name" class="contact-input" required>
+            <input type="text" name="lName" placeholder="Last Name"  class="contact-input" required>
+            <input type="text" name="street" placeholder="Address"  class="contact-input" required>
+            <input type="text" name="city" placeholder="City"        class="contact-input" required>
+            <input type="text" name="province" placeholder="Province"  class="contact-input" required>
+            <input type="text" name="postal" placeholder="Postal Code"  class="contact-input" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
+            <input type="text" name="phone" placeholder="Phone Number"  class="contact-input" pattern= "[0-9]{3}[0-9]{3}[0-9]{4}" required>
+
+            <label for="select" id="inquiry-type">What can I help you with?</label>
+            <select id="select" name="purpose" class="contact-input">
+                <option value="project">Project Proposal</option>
+                <option value="employment">Employment Inquiry</option>
+                <option value="connect">Looking to connect</option>
+                <option value="Other">Other</option>
+            </select>
+
+               <div class="form-checkbox">
+                <label for="phone-me">I consent to receieve SMS*</label>
+                <input type="checkbox" id="phone-me" name="phone-me" required>    
+                </div> 
+
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Please provide a brief description of your request." class="contact-input"></textarea>
+
+
+            <div class="form-buttons">
+            <button type="submit" id="submit">Submit Request</button>
+            <button type="reset" id="reset">Reset Details</button>
+        </div>
+        </form>
+
+    </div> 
+    
+
+
+
+   
+</body>
+</html>
